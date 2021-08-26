@@ -6,7 +6,7 @@
 
 
 
-This project uses a react Frontend, Python backend, and MongoDB database to visualize an arbitrary amount of squares to be plotted on the U.S. An existing square's location
+This project uses a react Frontend, Python/Flask backend, and MongoDB database to visualize an arbitrary amount of squares to be plotted on the U.S. An existing square's location
 can be updated, with an additional list enumerating the ids of created squares. These squares can also be deleted using the delete form.
 
 # Installation
