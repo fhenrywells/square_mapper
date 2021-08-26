@@ -1,4 +1,5 @@
 import time
+import sys
 
 from flask import Flask, jsonify;
 from flask_socketio import SocketIO, send, emit
@@ -13,10 +14,10 @@ socketIo = SocketIO(app, cors_allowed_origins="*")
 app.debug = True
 app.host = 'localhost'
 
-db = Database()
+global db
 
 @socketIo.on("message")
-def handleMessage(msg_type, *args, **kwargs):
+def handleMessage(msg_type: str, *args, **kwargs):
     """
     Function for responding to update or delete messages from client
     """
@@ -42,4 +43,6 @@ def handleMessage(msg_type, *args, **kwargs):
     return None
 
 if __name__ == '__main__':
+    clear_old = sys.argv[1]
+    db = Database(clear_old=bool(clear_old))
     socketIo.run(app)
