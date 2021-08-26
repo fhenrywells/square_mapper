@@ -15,8 +15,8 @@ brew install mongodb-community
 
 # Running
 
-This project can be run in two terminals, using the 'run.sh' script at the top level to run the server backend and 'npm start' at the root of the client folder.
+This project can be run in two terminals, using the `run.sh` script at the top level to run the server backend and `npm start` at the root of the client folder.
 
-If you would like the database contents to be preserved across multiple backend runs, you can pass 'True' to the run script, as this is the only configurable part of the backend.
+If you would like the database contents to be preserved across multiple backend runs, you can pass `True` to the run script, as this is the only configurable part of the backend.
 
 
