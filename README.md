@@ -1,5 +1,10 @@
 # Square Mapper
 
+
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/44304380/130883209-029f6e95-c54a-4a8b-a522-9e381cb9aa0e.gif)
+
+
+
 This project uses a react Frontend, Python backend, and MongoDB database to visualize an arbitrary amount of squares to be plotted on the U.S. An existing square's location
 can be updated, with an additional list enumerating the ids of created squares. These squares can also be deleted using the delete form.
 
